@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #f6f8fa;
+}
+
+.app-root {
+  padding: 24px;
+}

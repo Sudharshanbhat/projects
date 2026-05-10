@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Info Getter</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f5f5f5;
+        }
+
+        /* HEADER */
+        header{
+            background:#4285F4;
+            color:white;
+            padding:15px 40px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo-section{
+            display:flex;
+            align-items:center;
+            gap:15px;
+        }
+
+        .logo-section img{
+            width:60px;
+            height:60px;
+            border-radius:50%;
+            background:white;
+        }
+
+        .logo-section h1{
+            font-size:32px;
+        }
+
+        /* NAVBAR */
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:30px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:yellow;
+        }
+
+        /* GOOGLE INFO SECTION */
+        .info-section{
+            display:flex;
+            padding:50px;
+            background:white;
+            align-items:center;
+            gap:40px;
+        }
+
+        .info-image{
+            width:50%;
+        }
+
+        .info-image img{
+            width:100%;
+            border-radius:10px;
+        }
+
+        .info-text{
+            width:50%;
+        }
+
+        .info-text h2{
+            color:#4285F4;
+            margin-bottom:20px;
+            font-size:35px;
+        }
+
+        .info-text p{
+            font-size:18px;
+            line-height:1.8;
+            text-align:justify;
+        }
+
+        /* SERVICES */
+        .services{
+            padding:50px 30px;
+            text-align:center;
+        }
+
+        .services h2{
+            font-size:35px;
+            color:#4285F4;
+            margin-bottom:40px;
+        }
+
+        .service-container{
+            display:flex;
+            justify-content:space-between;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        .service-box{
+            display: block;
+            background:white;
+            width:23%;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0px 2px 10px rgba(0,0,0,0.1);
+            transition:0.3s;
+            color:inherit;
+            text-decoration:none;
+        }
+
+        .service-box:hover{
+            transform:translateY(-5px);
+        }
+
+        .service-box img{
+            width:100%;
+            height:180px;
+            border-radius:10px;
+        }
+
+        .service-box h3{
+            margin:15px 0;
+            color:#333;
+        }
+
+        .service-box p{
+            font-size:15px;
+            color:#666;
+        }
+
+        /* FOOTER */
+        footer{
+            background:#202124;
+            color:white;
+            text-align:center;
+            padding:30px;
+            margin-top:40px;
+        }
+
+        footer h3{
+            margin-bottom:10px;
+        }
+
+        footer p{
+            margin:5px 0;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:900px){
+
+            .info-section{
+                flex-direction:column;
+            }
+
+            .info-image,
+            .info-text{
+                width:100%;
+            }
+
+            .service-box{
+                width:48%;
+            }
+        }
+
+        @media(max-width:600px){
+
+            header{
+                flex-direction:column;
+                gap:20px;
+            }
+
+            nav ul{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            .service-box{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo-section">
+            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Logo">
+            <h1>Info Getter</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="basicapp.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- GOOGLE INFO SECTION -->
+    <section class="info-section">
+
+        <div class="info-image">
+            <img src="image\maingoogle.jpg" alt="Google">
+        </div>
+
+        <div class="info-text">
+            <h2>About Google</h2>
+
+            <p>
+                Google is one of the world’s leading technology companies,
+                best known for its powerful search engine. It provides a wide
+                range of internet-based services including Gmail, Google Maps,
+                Google Drive, YouTube, and cloud computing solutions. Google
+                focuses on innovation, artificial intelligence, and providing
+                useful digital tools for people and businesses across the world.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+
+        <h2>Google Services</h2>
+
+        <div class="service-container">
+
+                <a class="service-box" href="gmail.html">
+                    <img src="image\Gmail_icon_(2020).svg" alt="Gmail">
+
+                    <h3>Gmail</h3>
+
+                    <p>
+                        Gmail is Google's email service used by millions worldwide.
+                    </p>
+                </a>
+
+            <a class="service-box" href="maps.html">
+                <img src="image\map.jpg" alt="Google Maps">
+
+                <h3>Google Maps</h3>
+
+                <p>
+                    Google Maps helps users navigate and explore locations easily.
+                </p>
+            </a>
+
+            <a class="service-box" href="drive.html">
+                <img src="image\drive.jpg" alt="Google Drive">
+
+                <h3>Google Drive</h3>
+
+                <p>
+                    Google Drive provides secure cloud storage for files and documents.
+                </p>
+            </a>
+
+            <a class="service-box" href="youtube.html">
+                <img src="image\youtube.png" alt="YouTube">
+
+                <h3>YouTube</h3>
+
+                <p>
+                    YouTube is the world's largest video sharing platform by Google.
+                </p>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <!-- CONTACT PREVIEW (below services) -->
+    <section class="contact-preview" style="background:#fff;padding:30px;margin:20px 30px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+        <h3 style="color:#4285F4;margin-bottom:12px;">Contact Google</h3>
+        <p style="color:#333;line-height:1.6;max-width:900px;">Have questions or need support? Visit our Contact page for email, phone, and address details, or use the contact form to send a message directly.</p>
+        <p style="margin-top:12px;"><a href="contact.html" style="color:#4285F4;text-decoration:none;font-weight:bold;">Go to Contact Page &rarr;</a></p>
+    </section>
+
+    <footer>
+        <h3>Google Contact Information</h3>
+
+        <p>Email: support@google.com</p>
+        <p>Phone: +1 650-253-0000</p>
+        <p>Address: 1600 Amphitheatre Parkway, Mountain View, California, USA</p>
+
+    </footer>
+
+    <script src="javascript/connect.js"></script>
+</body>
+</html>

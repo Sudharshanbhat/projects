@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="javascript/connect.js"></script>
+<body>
+    <div class="card">
+        <h2>Sign in</h2>
+        <form id="loginForm">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" required>
+
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter password" required>
+
+            <div class="actions">
+                <button type="submit">Login</button>
+                <a class="link" href="basicapp.html">Back</a>
+            </div>
+
+            <div id="error" class="error">Invalid credentials. Try user@example.com / password123</div>
+
+            <div class="note">Demo credentials: <strong>user@example.com</strong> / <strong>password123</strong></div>
+        </form>
+    </div>
+
+    <script>
+        (function(){
+            const form = document.getElementById('loginForm');
+            const errorEl = document.getElementById('error');
+            form.addEventListener('submit', function(e){
+                e.preventDefault();
+                const email = document.getElementById('email').value.trim();
+                const pass = document.getElementById('password').value;
+                // without  Basic demo authentication
+                
+                if(email.toLowerCase() === 'user@example.com' && pass === 'password123'){
+                    // redirect to main app
+                    window.location.href = 'basicapp.html';
+                } else {
+                    errorEl.style.display = 'block';
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

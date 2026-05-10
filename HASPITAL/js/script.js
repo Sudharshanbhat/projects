@@ -16,6 +16,7 @@ function myFunction() {
     }
 
 }
+
 function switchSize() {
     var img = document.getElementById("img1");
     if (img.width === 250) {

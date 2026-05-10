@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Google Maps - Info Getter</title>
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0}
+        body{font-family:Arial, sans-serif;background:#f5f5f5;color:#222}
+        header{background:#4285F4;color:#fff;padding:12px 24px;display:flex;align-items:center;gap:12px}
+        header img{width:48px;height:48px;border-radius:50%;background:#fff}
+        main{max-width:1100px;margin:36px auto;background:#fff;padding:28px;border-radius:8px}
+        .info-section{display:flex;gap:36px;align-items:center}
+        .info-image{width:48%}
+        .info-image img{width:100%;height:auto;border-radius:10px;display:block}
+        .info-text{width:52%}
+        .info-text h2{color:#4285F4;font-size:36px;margin-bottom:18px}
+        .info-text p{font-size:18px;line-height:1.8;color:#333;text-align:justify}
+        .back{display:inline-block;margin-top:22px;color:#4285F4;text-decoration:none}
+        .contact-btn{display:inline-block;margin-top:22px;margin-left:12px;background:#34A853;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        @media(max-width:900px){.info-section{flex-direction:column}.info-image,.info-text{width:100%}}
+    </style>
+</head>
+    <main>
+        <section class="info-section">
+            <div class="info-image">
+                <img src="image\map.jpg" alt="Google Maps">
+            </div>
+
+            <div class="info-text">
+                <h2>Google Maps</h2>
+                <p>
+                    Google Maps enables exploration and navigation with detailed maps, satellite imagery, and Street View. It offers real-time traffic, transit schedules, and route planning for driving, walking, biking, and public transit to help users reach destinations efficiently.
+                </p>
+                <p>
+                    Developers can integrate Maps APIs to add location-aware features, place search, and interactive map experiences into their applications.
+                </p>
+
+                <a class="back" href="basicapp.html">&larr; Back to Home</a>
+                <a class="contact-btn" href="contact.html">Contact Us</a>
+            </div>
+        </section>
+    </main>
+        <h1>Google Maps</h1>
+        <p>
+            Google Maps helps users find places, plan routes, and discover local businesses. It provides turn-by-turn navigation, live traffic updates, transit schedules, and Street View imagery. Developers also use Maps APIs to embed interactive maps and location features into apps.
+        </p>
+
+        <a class="back" href="basicapp.html">&larr; Back to Home</a>
+    </main>
+    <script src="javascript/connect.js"></script>
+</body>
+</html>

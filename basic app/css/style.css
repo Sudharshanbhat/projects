@@ -1,0 +1,116 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+/* Centered, Google-style layout */
+.page-center {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: #ffffff;
+}
+
+.center-header {
+    margin-bottom: 24px;
+}
+
+.company-logo {
+    width: 220px;
+    height: auto;
+    display: block;
+}
+
+.center-description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.app-name {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.tagline {
+    color: #555;
+    font-size: 1.05rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.google-services {
+    margin-top: 18px;
+}
+
+.services-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.service-item {
+    text-align: center;
+}
+
+.service-link {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    margin-bottom: 8px;
+}
+
+.service-label {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: #f3f3f3;
+    color: #333;
+    text-align: center;
+    padding: 16px 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    .company-logo {
+        width: 160px;
+    }
+
+    .services-list {
+        gap: 18px;
+    }
+
+    .service-icon {
+        width: 72px;
+        height: 72px;
+    }
+}
